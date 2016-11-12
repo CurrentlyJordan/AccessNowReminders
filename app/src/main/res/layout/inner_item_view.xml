@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/inner_reminder_text"
+            android:text="default text"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/delete_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#ff0000">
+            <TextView
+                android:paddingLeft="6dp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="#ff0000"
+                android:text="Delete Reminder?"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/delete_button_yes"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:background="#FFFFFF"
+                android:text="Yes"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/delete_button_no"
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:background="#FFFFFF"
+                android:text="No"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
